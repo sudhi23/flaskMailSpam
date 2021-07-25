@@ -1,0 +1,10 @@
+SENDER = "@gmail.com"
+PASSWORD = ""
+RECEIVER = "@gmail.com"
+FROM = "From: From <@gmail.com>"
+TO = "To: To <@gmail.com>"
+SUBSPAM = "Subject: SPAM alert"
+SUBHAM = "Subject: HAM info"
+
+SPAM = "The mail was a spam mail!\nMessage: "
+HAM = "The mail was a ham mail.\nMessage: "
