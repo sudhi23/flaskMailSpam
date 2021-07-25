@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* :focus {
+  outline: none;
+}
+
+.heading {
+  background-color: rgb(47, 54, 59);
+  color: azure;
+  font-family: monospace;
+  margin: 0 2vw;
+  padding: 1vh 1vw;
+  font-size: 50px;
+}
+
+.mail {
+  height: 65vh;
+  margin: 2vh 2vw;
+  padding: 3vh 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mail > textarea {
+  flex: 0.75;
+  width: 90%;
+  padding: 1vh 1vw;
+  font-family: monospace;
+  border-radius: 20px;
+  font-size: 32px;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.mail > textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.mail > button {
+  flex: 0.12;
+  width: 30%;
+  font-family: monospace;
+  background-color: rgb(47, 54, 59);
+  font-size: 32px;
+  color: azure;
+  border-radius: 20px;
+}
+
+.hamspam {
+  color: azure;
+  font-family: monospace;
+  width: 50%;
+  margin: 2vh 25vw;
+  text-align: center;
+  font-size: 32px;
+}
+
+.ham {
+  background-color: rgb(19, 218, 78);
+  padding: 1vh 1vw;
+  border-radius: 20px;
+}
+
+.spam {
+  background-color: rgb(218, 26, 19);
+  padding: 1vh 1vw;
+  border-radius: 20px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <title>SpaMail</title>
+</head>
+<body>
+    <div class="heading">Spam Mail Classifier</div>
+    <form class="mail" method="post">
+        <textarea name="mail" id="mail" placeholder="Enter the mail"></textarea>
+        <button type="submit">Check</button>
+    </form>
+    <div class="hamspam">
+        {% if ham %}
+            <div class="ham">This mail isn't a spam mail.</div>
+        {% endif %}
+        {% if spam %}
+            <div class="spam">This mail is a spam mail.</div>
+        {% endif %}
+    </div>
+</body>
+</html>
