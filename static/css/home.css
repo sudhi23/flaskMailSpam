@@ -27,7 +27,7 @@
 }
 
 .mail > textarea {
-  flex: 0.75;
+  flex: 0.65;
   width: 90%;
   padding: 1vh 1vw;
   font-family: monospace;
@@ -43,8 +43,17 @@
   display: none;
 }
 
+.mail > select {
+  flex: 0.1;
+  width: 60%;
+  padding: 0 1vw;
+  font-family: monospace;
+  font-size: 32px;
+  border-radius: 20px;
+}
+
 .mail > button {
-  flex: 0.12;
+  flex: 0.1;
   width: 30%;
   font-family: monospace;
   background-color: rgb(47, 54, 59);
@@ -54,21 +63,35 @@
 }
 
 .hamspam {
-  color: azure;
   font-family: monospace;
-  width: 50%;
-  margin: 2vh 25vw;
+  height: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 2vw;
   text-align: center;
   font-size: 32px;
 }
 
+.ta {
+  flex: 0.45;
+  font-size: 32px;
+}
+
 .ham {
+  flex: 0.45;
+  color: azure;
+  width: 50%;
   background-color: rgb(19, 218, 78);
   padding: 1vh 1vw;
   border-radius: 20px;
 }
 
 .spam {
+  flex: 0.4;
+  color: azure;
+  width: 50%;
   background-color: rgb(218, 26, 19);
   padding: 1vh 1vw;
   border-radius: 20px;

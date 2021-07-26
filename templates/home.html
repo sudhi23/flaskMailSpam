@@ -11,9 +11,15 @@
     <div class="heading">Spam Mail Classifier</div>
     <form class="mail" method="post">
         <textarea name="mail" id="mail"  placeholder="Enter the mail">{{mail}}</textarea>
+        <select name="model" id="model">
+            <option value=0>Multinomial NB</option>
+            <option value=1>Linear SVC</option>
+        </select>
         <button type="submit">Check</button>
     </form>
+    {% if modelName %}
     <div class="hamspam">
+        <div class="ta">Test accuracy for {{modelName}} : {{ta}}</div>
         {% if ham %}
             <div class="ham">This mail isn't a spam mail.</div>
         {% endif %}
@@ -21,5 +27,6 @@
             <div class="spam">This mail is a spam mail.</div>
         {% endif %}
     </div>
+    {% endif %}
 </body>
 </html>

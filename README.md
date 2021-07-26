@@ -19,5 +19,7 @@ Takes the input from the user and results whether the mail is a spam or a ham.
 ## Screenshots
 
 ![Home](static/screenshots/home.png)
-![Ham](static/screenshots/ham.png)
-![Spam](static/screenshots/spam.png)
+![HamLinSVC](static/screenshots/hamLinSVC.png)
+![HamMultiNB](static/screenshots/hamMultiNB.png)
+![SpamLinSVC](static/screenshots/spamLinSVC.png)
+![SpamMultiNB](static/screenshots/spamMultiNB.png)
